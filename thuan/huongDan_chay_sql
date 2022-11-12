@@ -1,0 +1,88 @@
+
+CREATE TABLE thuan.categories (
+  `Id` int NOT NULL AUTO_INCREMENT,
+  `CategoryName` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+);
+
+CREATE TABLE thuan.products (
+  `ProductId` int NOT NULL AUTO_INCREMENT,
+  `ProductName` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `Price` int DEFAULT NULL,
+  `Link` text,
+  `Screen` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `Os` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `CameraS` text,
+  `CameraT` text,
+  `Cpu` text,
+  `Ram` text,
+  `Rom` text,
+  `Memory_stick` text,
+  `Description` text,
+  `Id` int DEFAULT NULL,
+  PRIMARY KEY (`ProductId`),
+  KEY `fk_ten` (`Id`),
+  CONSTRAINT `fk_ten` FOREIGN KEY (`Id`) REFERENCES `categories` (`Id`)
+);
+
+
+ CREATE TABLE thuan.customers (
+  `CustomerId` int NOT NULL AUTO_INCREMENT,
+  `Users` varchar(45) NOT NULL,
+  `Password` varchar(45) DEFAULT NULL,
+  `role` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`CustomerId`,`Users`),
+  `id` int not null AUTO_INCREMENT PRIMARY KEY
+);
+
+
+
+
+ CREATE TABLE thuan.tableorder (
+  `ProductId` int NOT NULL,
+  `Users` varchar(45) NOT NULL,
+  `Soluong` int DEFAULT NULL,
+  `TongTien` int DEFAULT NULL,
+  `OrderTime` varchar(45) DEFAULT NULL,
+  `Id` int NOT NULL AUTO_INCREMENT PRIMARY KEY
+);
+
+
+CREATE TABLE thuan.orderinfo (
+  `CustomerId` int NOT NULL,
+  `Address` text,
+  `Phone` varchar(45) DEFAULT NULL,
+  `RecipientName` varchar(45) DEFAULT NULL,
+  `Note` text,
+  `OrderTime` datetime NOT NULL,
+  PRIMARY KEY (`CustomerId`,`OrderTime`)
+)	 ;
+
+
+CREATE TABLE thuan.tableorderdetail (
+  `OrderTime` datetime NOT NULL,
+  `ProductId` int NOT NULL,
+  `Users` varchar(45) NOT NULL,
+  `Soluong` int NOT NULL,
+  `TongTien` int DEFAULT NULL,
+  PRIMARY KEY (`OrderTime`,`ProductId`,`Users`)
+);
+
+bước 6 chọt chuột vô chử Edit  cái  File (ghi chú góc trái màn hình)
+ chọn Preference (cai cuối cùng)
+
+
+ kích chuột vào SQL Editor xong kéo xún cuối cùng
+
+ tắt cái tick trong cái hàng  Safe Update 
+ kích Ok xong tắt con cá heo vào lại 
+ ok
+
+
+
+ UPDATE `thuan`.`customers` SET `role` = 'admin' WHERE (`CustomerId` = '1');
+
+
+ Dừng làm khuê thất vọng
+
+

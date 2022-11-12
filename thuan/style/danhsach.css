@@ -1,0 +1,33 @@
+.group-card img{
+    width: 100%;
+}
+.group-card{
+    margin-left: 10%;
+    width: 80%;
+    display: flex;
+    font-size: 15px;
+}
+.ds-card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+}
+
+.ds-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container-card{
+    margin-left: 15px;
+    margin-top: 15px;
+    padding: 2px 16px;
+}
+.button-card{
+    margin-left: 65px;
+}
+.container-card p{
+    text-align: center;
+}
+.header-ds{
+    margin-left: 10%;
+}

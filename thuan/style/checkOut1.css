@@ -1,0 +1,14 @@
+div.checkOut {margin-left: 100px;
+	margin-top: 50px;
+}
+div#mainCheckOut{display: flex;}
+.infomation {
+        margin-left: 200px;
+    margin-top: 50px;
+}
+
+
+
+input[type="text"] {
+    margin: 10px;
+}

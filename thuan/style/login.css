@@ -1,0 +1,153 @@
+/*body {
+    background-color: #cdcdcd;
+}
+*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    width: 80%;
+    height: 500px;
+    position: relative;
+    top: 50px;
+    margin-left: 10%;
+    border: 1px solid #8b8b8b;
+    border-radius: 5px;
+    box-shadow:  3px 4px 5px 4px #633838;
+}
+ .sign_in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    height: 500px;
+    width: 70%;
+    border: 2px solid #8b8b8b;
+    border-radius: 5px;
+}
+
+input#singup_button {
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+    width: 200px;
+    cursor: pointer;
+    background-color: cadetblue;;
+}
+input#singup_button:hover { 
+    color: #4826d1;
+}
+input#singin_button:hover { 
+    color: #4826d1;
+
+}
+input#singin_button {
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+    cursor: pointer;
+    background-color: cadetblue;
+}
+
+.sign_up {
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: brown;
+        height: 500px;
+        width: 70%;
+        border: 2px solid #8b8b8b;
+        border-radius: 4px;
+}
+img#imgin_up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    border-radius: 2px;
+    
+}
+form.form {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: absolute;
+}
+.right {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: #6b6b70;
+    width: 50%;
+    border: 2px solid #8b8b8b;
+    border-radius: 5px;
+}
+.right a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.sign_in h1{
+        display: flex;     
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+    }
+    .sign_up h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+    }
+.form_button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative; 
+        top: -80px;
+    }   
+h2#welcome {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        font-family: monospace;
+    }
+    
+    form.changeform input {
+        border: 1px solid #3d3838;
+        border-radius: 5px;
+        height: 25px;
+        width: 85px;
+        background-color: #184b4d;
+        cursor: pointer;    
+        color: whitesmoke;
+        margin-right: 30px;
+    }
+    form.changeform input:hover {
+        color: #ad971c;
+
+    }
+    
+    button#buttontrangchu {
+        border: 1px solid #3d3838;
+        border-radius: 5px;
+        height: 25px;
+        background-color: #184b4d;
+        cursor: pointer;
+    }
+    form.form input {
+        border: 1px solid gray;
+        border-radius: 2px;
+        height: 30px;
+        background-color: whitesmoke;
+    }
+    button:hover{
+        color: #ad971c;
+    }
+    

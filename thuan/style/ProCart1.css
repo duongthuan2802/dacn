@@ -1,0 +1,18 @@
+img{
+    width: 120px;
+}
+#sanpham{
+    display: flex;
+}
+td{
+    text-align: center;
+}
+table,td{
+    border-top: 1px solid red;
+}
+table{
+    border-bottom: 1px solid red;
+}
+#cart_{
+    margin-top:80px
+}
